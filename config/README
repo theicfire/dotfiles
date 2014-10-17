@@ -1,0 +1,5 @@
+Something like:
+$ xmodmap FILENAME
+
+to make a backup, do:
+$ xmodmap -pke > FILENAME

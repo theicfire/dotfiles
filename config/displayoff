@@ -1,0 +1,3 @@
+#!/bin/sh
+xrandr --output HDMI3 --off
+xrandr --output LVDS1 --auto

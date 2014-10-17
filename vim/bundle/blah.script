@@ -1,0 +1,6 @@
+type String = [Char]
+type Name = String
+type PhoneNumber = String
+type PhoneBook = [(Name, PhoneNumber)]
+
+inPhoneBook "betty" "555-2938" phoneBook

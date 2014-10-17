@@ -1,0 +1,5 @@
+Copy this to ~/.config/dotfiles
+
+Then run:
+$ cd ~/.config/dotfiles
+$ sh install.sh
