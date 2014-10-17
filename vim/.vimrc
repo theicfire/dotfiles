@@ -71,9 +71,10 @@ nnoremap <leader>cf :CommandTFlush<CR>
 nnoremap <leader>P "0p
 vnoremap <leader>P "0p
 
-" tab navigation like firefox
-"nnoremap <C-S-Tab> :tabprevious<CR>
-"nnoremap <M-S-}> :tabnext<CR>
+nnoremap <C-l> :tabnext<CR>
+nnoremap <C-h> :tabprevious<CR>
+
+"nnoremap tj  :tabnext<CR>
 
 set mouse=a
 
