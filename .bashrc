@@ -102,8 +102,6 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-
-
 # CHASE stuff
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -111,17 +109,13 @@ export PATH="/usr/local/heroku/bin:$PATH"
 ### Add android stuff
 export PATH=${PATH}:~/code/android/sdk/sdk/tools
 export PATH=${PATH}:~/code/android/sdk/sdk/platform-tools
-#export PATH=${PATH}:~/cosmogia/dev_tools/bin
 export PATH=${PATH}:/usr/bin/python2.6
 export PATH=${PATH}:~/arcanist/arcanist/bin
 export PATH=${PATH}:/usr/local/go/bin
 export VAGRANT_HOME=/home/chase/vms/vagrant_home/
-alias cdgn='cd /home/chase/cosmogia/ground/ground_network/'
-alias sshim='ssh ubuntu@ec2-75-101-208-220.compute-1.amazonaws.com -i ~/.ssh/chasekey.pem'
 export GOPATH='/home/chase/Documents/Dropbox (MIT Startup Club)/mit/6.824/final/'
 
-#aws
-export PATH="$PATH:/home/chase/inbox/arcanist/bin/"
+#export PATH="$PATH:/home/chase/inbox/arcanist/bin/"
 
 #autojump
 [[ -s /home/chase/.autojump/etc/profile.d/autojump.sh ]] && source /home/chase/.autojump/etc/profile.d/autojump.sh
