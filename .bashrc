@@ -119,3 +119,10 @@ export GOPATH='/home/chase/Documents/Dropbox (MIT Startup Club)/mit/6.824/final/
 
 #autojump
 [[ -s /home/chase/.autojump/etc/profile.d/autojump.sh ]] && source /home/chase/.autojump/etc/profile.d/autojump.sh
+
+# turn off ctrl-s
+stty stop undef
+stty stop ''
+stty start ''
+stty -ixon
+stty -ixoff
