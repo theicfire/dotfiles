@@ -28,19 +28,6 @@ set tw=500
 set si "Smart indent
 set wrap "Wrap lines
 
-"yank and paste go to a register delete and cut does not share
-"noremap  d "_d
-"noremap  dd "_dd
-"vnoremap  d "_d
-"noremap  y "-y
-"noremap  Y "-Y
-"noremap  p "-p
-"noremap  P "-P
-"vnoremap y "-y
-"vnoremap Y "-Y
-"vnoremap p "-p
-"vnoremap P "-P
-
 " scrolling
 inoremap <C-E> <C-X><C-E> "scrolling on insert
 inoremap <C-Y> <C-X><C-Y>
@@ -98,3 +85,14 @@ set undodir=~/.vim/undodir
 set undofile
 set undolevels=1000 "maximum number of changes that can be undone
 set undoreload=10000 "maximum number lines to save for undo on a buffer reload
+
+" vp doesn't replace paste buffer
+function! RestoreRegister()
+  let @" = s:restore_reg
+  return ''
+endfunction
+function! s:Repl()
+  let s:restore_reg = @"
+  return "p@=RestoreRegister()\<cr>"
+endfunction
+vmap <silent> <expr> p <sid>Repl()
