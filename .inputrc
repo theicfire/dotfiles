@@ -1,2 +1,3 @@
 set mark-symlinked-directories On
 $include /etc/inputrc
+ set bell-style none
