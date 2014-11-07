@@ -96,3 +96,6 @@ function! s:Repl()
   return "p@=RestoreRegister()\<cr>"
 endfunction
 vmap <silent> <expr> p <sid>Repl()
+
+" markdown also starts with .md
+autocmd BufNewFile,BufRead *.md set filetype=markdown
