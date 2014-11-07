@@ -52,7 +52,6 @@ vnoremap <leader>p <Esc>:set paste<CR>gv"+p:set nopaste<CR>
 vnoremap <leader>y "+y
 "select all
 nnoremap <leader>a ggVG
-nnoremap <leader>cf :CommandTFlush<CR>
 "paste from 0 register
 "Useful because `d` overwrites the <quote> register
 nnoremap <leader>P "0p
@@ -70,8 +69,8 @@ nnoremap k gk
 nnoremap j gj
 
 " vimslime
-let g:slime_target = "tmux"
-nmap <C-C><C-N> :set ft=haskell.script<CR><C-C><C-C>:set ft=haskell<CR>
+"let g:slime_target = "tmux"
+"nmap <C-C><C-N> :set ft=haskell.script<CR><C-C><C-C>:set ft=haskell<CR>
 
 " pathogen
 execute pathogen#infect()
@@ -99,3 +98,8 @@ vmap <silent> <expr> p <sid>Repl()
 
 " markdown also starts with .md
 autocmd BufNewFile,BufRead *.md set filetype=markdown
+
+" fzf command
+set rtp+=~/.fzf
+
+nnoremap <leader>t :call fzf#run({ 'sink': 'tabe', 'options': '-m +c -e', 'dir': '.', 'source': 'find .' })<CR>

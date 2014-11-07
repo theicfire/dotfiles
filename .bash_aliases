@@ -13,4 +13,4 @@ alias cd824='cd /afs/athena.mit.edu/user/l/a/lambertc/6.824/src'
 alias cdi='cd ~/inbox/inbox'
 alias v='vim'
 alias ktail='tail -f /var/log/kern.log'
-alias g="cd \`cat ~/.local/share/autojump/autojump.txt | sort -n | grep -Po '^[^\s]+\s+(\K.*)' | fzf +s\`"
+alias g="cd \`cat ~/.local/share/autojump/autojump.txt | sort -n | grep -Po '^[^\s]+\s+(\K.*)' | fzf +s -e\`"
