@@ -13,4 +13,7 @@ alias cd824='cd /afs/athena.mit.edu/user/l/a/lambertc/6.824/src'
 alias cdi='cd ~/inbox/inbox'
 alias v='vim'
 alias ktail='tail -f /var/log/kern.log'
-alias g="cd \`cat ~/.local/share/autojump/autojump.txt | sort -n | grep -Po '^[^\s]+\s+(\K.*)' | fzf +s -e\`"
+
+alias g="new_loc=\$(cat ~/.local/share/autojump/autojump.txt | sort -n | grep -Po '^[^\s]+\s+(\K.*)' | fzf +s -e) && cd \"\$new_loc\""
+alias c="a=\`find . -type d | fzf -e\`; if [ \$a ]; then cd \$a; fi; unset a"
+alias less="less -i"
