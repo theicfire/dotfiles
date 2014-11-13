@@ -38,3 +38,8 @@
     p = pull --rebase
 [core]
 	excludesfile = /home/chase/.gitignore_global
+[sendemail]
+	smtpuser = t.heicfire@gmail.com
+	smtpserver = smtp.googlemail.com
+	smtpencryption = tls
+	smtpserverport = 587
