@@ -128,3 +128,11 @@ stty -ixon
 stty -ixoff
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+# pyenv
+export PYENV_ROOT="$HOME/.dotfiles/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# pyenv virtualenv
+# optional; does automatic virtualenv activation?
+# eval "$(pyenv virtualenv-init -)"
