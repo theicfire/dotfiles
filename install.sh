@@ -9,3 +9,4 @@ ln -s ~/.config/dotfiles/.profile .profile
 ln -s ~/.config/dotfiles/.tmux.conf .tmux.conf
 ln -s ~/.config/dotfiles/vim .vim
 ln -s ~/.config/dotfiles/vim/.vimrc .vimrc
+ln -s ~/.config/dotfiles .dotfiles
