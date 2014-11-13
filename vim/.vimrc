@@ -103,3 +103,12 @@ autocmd BufNewFile,BufRead *.md set filetype=markdown
 set rtp+=~/.fzf
 
 nnoremap <leader>t :call fzf#run({ 'sink': 'tabe', 'options': '-m +c -e', 'dir': '.', 'source': 'find .' })<CR>
+
+set rtp+=~/.vim/vim-autocomplpop
+
+" ctags looks in the right directory
+set tags=./.tags,.tags;$HOME
+
+
+" Run python when typing <leader>r
+noremap <buffer> <leader>r :exec '!python' shellescape(@%, 1)<cr>
