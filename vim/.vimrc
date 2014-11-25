@@ -1,10 +1,24 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'Valloric/YouCompleteMe'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
 set autoindent
 set ts=4
 filetype on
-filetype plugin indent on
 
 syntax on
-set nocompatible
 set ignorecase
 set smartcase
 set hlsearch
@@ -104,11 +118,9 @@ set rtp+=~/.fzf
 
 nnoremap <leader>t :call fzf#run({ 'sink': 'tabe', 'options': '-m +c -e', 'dir': '.', 'source': 'find .' })<CR>
 
-set rtp+=~/.vim/vim-autocomplpop
-
 " ctags looks in the right directory
 set tags=./.tags,.tags;$HOME
 
 
 " Run python when typing <leader>r
-noremap <buffer> <leader>r :exec '!python' shellescape(@%, 1)<cr>
+noremap <buffer> <leader>r :w<cr> :exec '!python' shellescape(@%, 1)<cr>

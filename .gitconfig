@@ -4,7 +4,7 @@
 [credential]
 	helpter = cache
 [color]
-	ui = true
+	ui = always
 [push]
     default = current
 [alias]
