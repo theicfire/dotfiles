@@ -124,3 +124,7 @@ set tags=./.tags,.tags;$HOME
 
 " Run python when typing <leader>r
 noremap <buffer> <leader>r :w<cr> :exec '!python' shellescape(@%, 1)<cr>
+
+"ycm
+"let g:ycm_global_ycm_extra_conf = '~/.dotfiles/vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
+"let g:ycm_confirm_extra_conf = 0 " Don't ask for confirmation about ycm_extra_conf
