@@ -18,3 +18,6 @@ alias ktail='tail -f /var/log/kern.log'
 alias g="new_loc=\$(cat ~/.local/share/autojump/autojump.txt | sort -n | grep -Po '^[^\s]+\s+(\K.*)' | fzf +s) && cd \"\$new_loc\""
 alias c="a=\`find . -type d -maxdepth 1 | fzf\`; if [ \$a ]; then cd \$a; fi; unset a"
 alias less="less -ir"
+
+cmd="sudo iwlist wlan0 scan | grep ESSID"
+alias scanwifi="echo \"$cmd\" && $cmd"

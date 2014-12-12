@@ -128,3 +128,10 @@ noremap <buffer> <leader>r :w<cr> :exec '!python' shellescape(@%, 1)<cr>
 "ycm
 "let g:ycm_global_ycm_extra_conf = '~/.dotfiles/vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
 "let g:ycm_confirm_extra_conf = 0 " Don't ask for confirmation about ycm_extra_conf
+"
+" From http://stackoverflow.com/questions/3105307/how-do-you-automatically-remove-the-preview-window-after-autocompletion-in-vim
+" If you prefer the Omni-Completion tip window to close when a selection is
+" made, these lines close it on movement in insert mode or when leaving
+" insert mode
+"autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif

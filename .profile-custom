@@ -1,0 +1,9 @@
+echo -n 250 | sudo tee /sys/devices/platform/i8042/serio1/serio2/sensitivity
+echo -n 250 | sudo tee /sys/devices/platform/i8042/serio1/serio2/speed
+
+# wifi fix from http://ubuntuforums.org/showthread.php?t=1978457
+sudo modprobe -r iwldvm # needed from http://unix.stackexchange.com/questions/106299/cannot-remove-iwlwifi-module-even-though-interface-is-down
+sudo modprobe -r iwlwifi
+sudo modprobe iwlwifi 11n_disable=1
+
+setxkbmap -option caps:swapescape
