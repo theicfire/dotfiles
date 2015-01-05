@@ -39,7 +39,6 @@ inoremap <S-Tab> <C-D>
 set lbr "word wrap
 set tw=500
 
-set si "Smart indent
 set wrap "Wrap lines
 
 " scrolling
