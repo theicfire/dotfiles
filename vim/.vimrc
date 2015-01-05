@@ -116,10 +116,12 @@ autocmd BufNewFile,BufRead *.md set filetype=markdown
 " fzf command
 set rtp+=~/.fzf
 
-nnoremap <leader>t :call fzf#run({ 'sink': 'tabe', 'options': '-m +c -e', 'dir': '.', 'source': 'find .' })<CR>
+nnoremap <leader>t :call fzf#run({ 'sink': 'tabe', 'options': '-m +c', 'dir': '.', 'source': 'find .' })<CR>
 
 " ctags looks in the right directory
 set tags=./.tags,.tags;$HOME
+nnoremap <C-}> g<C-]>
+nnoremap <C-[> <C-t>
 
 
 " Run python when typing <leader>r
