@@ -136,3 +136,8 @@ noremap <buffer> <leader>r :w<cr> :exec '!python' shellescape(@%, 1)<cr>
 " insert mode
 "autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
+" Red coloring at whitespace after end of line whitespace
+autocmd InsertEnter * syn clear EOLWS | syn match EOLWS excludenl /\s\+\%#\@!$/
+autocmd InsertLeave * syn clear EOLWS | syn match EOLWS excludenl /\s\+$/
+highlight EOLWS ctermbg=red guibg=red
