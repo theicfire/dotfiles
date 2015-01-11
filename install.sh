@@ -1,4 +1,15 @@
 cd ~
+rm -f .bash_aliases
+rm -f .bashrc
+rm -f .fzf.bash
+rm -f .gitconfig
+rm -f .gitconfig_global
+rm -f .inputrc
+rm -f .profile
+rm -f .tmux.conf
+rm -f .vim
+rm -f .vimrc
+
 ln -s ~/.config/dotfiles/.bash_aliases .bash_aliases
 ln -s ~/.config/dotfiles/.bashrc .bashrc
 ln -s ~/.config/dotfiles/.fzf.bash .fzf.bash
