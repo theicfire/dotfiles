@@ -7,8 +7,9 @@ rm -f .gitconfig_global
 rm -f .inputrc
 rm -f .profile
 rm -f .tmux.conf
-rm -f .vim
+rm -rf .vim
 rm -f .vimrc
+rm -rf .dotfiles
 
 ln -s ~/.config/dotfiles/.bash_aliases .bash_aliases
 ln -s ~/.config/dotfiles/.bashrc .bashrc
