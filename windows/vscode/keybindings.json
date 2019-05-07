@@ -19,7 +19,7 @@
         "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
     },
     {
-        "key": "shift+alt+]",
+        "key": "ctrl+pagedown",
         "command": "workbench.action.nextEditor"
     },
     {
@@ -27,7 +27,7 @@
         "command": "-workbench.action.nextEditor"
     },
     {
-        "key": "shift+alt+[",
+        "key": "ctrl+pageup",
         "command": "workbench.action.previousEditor"
     },
     {

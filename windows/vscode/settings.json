@@ -23,5 +23,6 @@
         "<C-a>": false,
         "<C-f>": false,
         "<C-w>": false
-    }
+    },
+    "workbench.editor.enablePreview": false,
 }
