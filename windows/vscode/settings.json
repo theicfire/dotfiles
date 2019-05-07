@@ -1,0 +1,27 @@
+{
+    "C_Cpp.clang_format_fallbackStyle": "Google",
+    "vim.sneak": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+        "before": ["<leader>", "w"],
+        "commands": [":w"]
+        },
+        {
+        "before": ["<leader>", "q"],
+        "commands": [":q"]
+        },
+        {
+        "before": ["<leader>", "s", "h"],
+        "commands": [":nohl"]
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-w>": false
+    }
+}

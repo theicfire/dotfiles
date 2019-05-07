@@ -110,7 +110,9 @@ module.exports = {
     shellArgs: ['-i'],
 
     // for environment variables
-    env: { TERM: 'cygwin' },
+    env: { TERM: 'cygwin'},
+
+    scrollback: 1000000,
 
     // set to `false` for no bell
     bell: 'SOUND',
@@ -142,7 +144,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyper-pane", "hypercwd"],
+  plugins: ["hyper-pane"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
