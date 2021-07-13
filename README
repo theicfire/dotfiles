@@ -1,5 +1,1 @@
-Copy this to ~/.config/dotfiles
-
-Then run:
-$ cd ~/.config/dotfiles
-$ sh install.sh
+Deprecated. I forked this off and started changing windows things.
